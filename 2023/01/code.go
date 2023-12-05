@@ -98,7 +98,6 @@ func solve2() int {
 	numWordSlice := [9]string{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
 
 	result := 0
-	curr := 1
 	for scanner.Scan() {
 
 		line := scanner.Text()
@@ -205,7 +204,6 @@ func solve2() int {
 		}
 
 		result += num
-		curr++
 	}
 
 	return result
