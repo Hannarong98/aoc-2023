@@ -214,14 +214,14 @@ func solve2() int {
 func isDigit(mode int, line string) bool {
 
 	if mode == 0 {
-		matched, err := regexp.MatchString("\\d", string(line[0]))
+		matched, err := regexp.MatchString(`\d`, string(line[0]))
 		if err != nil {
 			log.Fatal(err)
 		}
 
 		return matched
 	} else {
-		matched, err := regexp.MatchString("\\d", string(line[len(line)-1]))
+		matched, err := regexp.MatchString(`\d`, string(line[len(line)-1]))
 		if err != nil {
 			log.Fatal(err)
 		}
